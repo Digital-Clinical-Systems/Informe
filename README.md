@@ -155,8 +155,116 @@ El curso contribuye al cumplimiento del Student Outcome ABET. En el siguiente cu
 ### 1.1. Startup Profile
 #### 1.1.1. Descripción de la Startup
 #### 1.1.2. Perfiles de integrantes del equipo
+
 ### 1.2. Solution Profile
+
 #### 1.2.1 Antecedentes y problemática
+
+Digital Clinical System es una plataforma web diseñada para optimizar el manejo de datos clínicos en las áreas de cardiología. Este proyecto nace como respuesta a un obstáculo recurrente en los centros de salud: la fragmentación de los datos del paciente, los cuales suelen estar divididos entre anotaciones en papel, documentos de Excel, softwares hospitalarios genéricos y reportes verbales entre el personal.
+
+En las unidades cardiovasculares, la velocidad y precisión con la que médicos y enfermeros acceden, registran y comparten los datos es vital. Elementos como el control de signos vitales, la administración de terapias, la evolución médica y las transiciones de turno necesitan un registro transparente y auditable. La desorganización de este flujo de información propicia errores por omisión, duplicación del trabajo y barreras para tener un historial claro de la atención brindada al paciente.
+
+La Organización Mundial de la Salud (OMS) clasifica a las patologías cardiovasculares como la causa número uno de mortalidad en el mundo. En el plano local, el Ministerio de Salud (MINSA) confirma que estas afecciones lideran los índices de mortalidad en el Perú. Esta realidad subraya la urgencia de implementar flujos clínicos estructurados, sobre todo en departamentos de salud donde el monitoreo constante y el registro de eventualidades no admiten margen de error.
+
+##### A. Quiénes están involucrados (Who)
+
+Los principales perjudicados por esta deficiencia son los **profesionales de la salud**. **El equipo de enfermería**, que necesita documentar terapias y signos vitales de manera continua; y **los médicos cardiólogos**, que dependen de esta información para emitir diagnósticos y tratamientos. De forma colateral, impacta en **los pacientes e instituciones de salud (clínicas y hospitales)** que buscan reducir el margen de error.
+
+##### B. Qué problema resuelve la solución (What)
+
+El desafío central radica en el manejo fragmentado, carente de estructura y difícil de auditar de los datos médicos dentro de las unidades de cardiología.
+
+Hoy en día, los datos críticos de los pacientes se encuentran esparcidos en múltiples formatos (apuntes manuales, sistemas aislados) o se transmiten únicamente de forma verbal. Esta situación provoca los siguientes inconvenientes:
+
+- Fuga o pérdida de detalles vitales durante el relevo del personal de salud.
+- Doble esfuerzo al tener que registrar la misma información tanto en papel como en medios digitales.
+- Tiempos de espera prolongados al intentar acceder al historial o estado actual del paciente.
+- Alta probabilidad de pasar por alto indicaciones importantes durante situaciones de emergencia.
+- Incapacidad para rastrear de forma exacta qué profesional ejecutó una acción clínica y en qué momento preciso.
+- Aumento de la fatiga laboral y la carga administrativa para los trabajadores de la salud.
+- Obstáculos para visualizar de manera clara y cronológica la recuperación o deterioro del paciente.
+
+Para hacer frente a este panorama, Digital Clinical System se presenta como una plataforma web que unifica toda la información clínica esencial. Nuestro sistema permite estandarizar las transferencias de turno mediante el protocolo SBAR, agiliza la captura de constantes vitales y eventualidades médicas, y garantiza una trazabilidad absoluta de las intervenciones, los responsables y los horarios exactos en los que se actuó.
+
+##### C. Cuándo ocurre el problema (When)
+
+Aunque estas deficiencias se manifiestan a lo largo de toda la rutina hospitalaria, alcanzan su punto máximo de riesgo en situaciones que exigen registrar, consultar o transmitir datos de forma inmediata.
+
+Estos escenarios críticos incluyen:
+
+- Los empalmes y relevos de turno del personal de enfermería.
+- La captura de constantes vitales durante el monitoreo continuo del paciente.
+- El manejo de episodios o complicaciones médicas imprevistas.
+- El análisis del progreso y evolución del paciente por parte de los médicos especialistas.
+- La validación de recetas, indicaciones o terapias a seguir.
+- Emergencias que demandan acceso instantáneo a un historial clínico totalmente actualizado.
+- La evaluación retrospectiva de casos para fines de auditoría o control de calidad asistencial.
+
+Durante estos instantes decisivos, cualquier retraso en el acceso a la información o la pérdida de un dato clave puede comprometer gravemente la seguridad y la continuidad del tratamiento. Es precisamente en estas ventanas de tiempo donde la agilidad y centralización que ofrece Digital Clinical System resultan indispensables para evitar negligencias.
+
+##### D. Dónde ocurre el problema (Where)
+
+La problemática se presenta principalmente en establecimientos dedicados a la salud cardiovascular, abarcando desde hospitales y clínicas particulares hasta Unidades de Cuidados Intensivos (UCI) cardiológicas y salas de emergencia.
+
+##### E. Por qué es relevante este problema (Why)
+
+La gravedad de esta problemática radica en que la calidad de los datos clínicos dicta el rumbo del tratamiento y la precisión de las decisiones médicas. Si el historial se encuentra fragmentado, redundante o inconcluso, el equipo de salud se ve forzado a desperdiciar minutos vitales rastreando, verificando o intentando deducir el contexto real del paciente.
+
+Este desorden informativo trae consigo diversas consecuencias negativas:
+
+- Caída en el rendimiento y la agilidad operativa durante la jornada laboral.
+- Incremento sustancial en la probabilidad de cometer negligencias o errores de medicación por falta de contexto.
+- Obstáculos para monitorear adecuadamente las complicaciones y episodios de alto riesgo.
+- Trabas en la comunicación asertiva entre el equipo multidisciplinario.
+- Aumento excesivo de la carga administrativa y de estrés para el cuerpo de enfermería.
+- Falta de garantías y altos niveles de duda para los cardiólogos al momento de prescribir tratamientos.
+- Carencia de herramientas para realizar auditorías efectivas y auditar el historial de intervenciones médicas.
+
+Ante este panorama, implementar Digital Clinical System representa una ventaja estratégica e indispensable. Nuestra solución elimina estos cuellos de botella operativos, reduciendo drásticamente la fricción administrativa y garantizando que el flujo de la información clínica sea ágil, estructurado y completamente seguro.
+
+##### F. Cómo se gestiona actualmente el problema (How)
+
+Actualmente, las instituciones sobreviven utilizando un ecosistema mixto y deficiente. Emplean sistemas informáticos generales que no se adaptan a la urgencia cardiológica, forzando al personal a usar cuadernos o notas físicas como respaldo rápido, para luego transcribir la información. Los traspasos de turno suelen ser verbales, sin un formato estructurado, lo que genera duplicidad de trabajo y riesgo de errores, como también dificulta la continuidad de atención.
+
+##### G. Cuánto impacta el problema (How much)
+
+- Impacto en Salud: Alta mortalidad global por afecciones cardiovasculares y prevalencia de hipertensión en Perú (ENDES 2024), lo que exige un monitoreo crítico constante.
+
+- Costo Operativo: El personal de enfermería pierde horas-hombre en tareas de doble registro, mientras que los cardiólogos retrasan sus diagnósticos al consolidar historiales dispersos.
+
+- Riesgo Institucional: Sin Digital Clinical System, los centros de salud pierden la capacidad de auditar eventos clínicos al carecer de una trazabilidad exacta sobre responsables, fechas y acciones médicas.
+
+##### Puntos principales que debe resolver la solución
+
+Digital Clinical System está diseñado para garantizar:
+
+- Centralización y agilidad: Unificar el historial cardiovascular, signos vitales y evolución del paciente en una plataforma de consulta rápida, eliminando la dependencia del papel.
+- Comunicación estandarizada: Estructurar los traspasos de turno utilizando el modelo SBAR para evitar pérdida de datos.
+- Trazabilidad total: Registrar con exactitud a los responsables, fechas, horarios y acciones de cada intervención médica.
+- Experiencia web integral: Ofrecer una interfaz fluida, responsiva y coherente entre el sitio promocional (Landing Page) y la - aplicación principal (Web Application).
+
+##### Objetivos de la solución
+
+**Objetivo general:**
+Desarrollar Digital Clinical System como una plataforma web distribuida que optimice la comunicación, garantice la trazabilidad y asegure la continuidad de la atención médica en áreas cardiovasculares.
+
+**Objetivos específicos:**
+
+- Frontend (Experiencia Web): Diseñar un sitio promocional (Landing Page) y una Web Application adaptable (responsive) que mantengan total coherencia visual y funcional.
+- Backend e Integración: Construir un RESTful API interno para soportar los recursos del sistema y conectarlo de manera fluida con la Web Application (y al menos un servicio externo, según rúbrica).
+- Flujos Clínicos: Implementar módulos específicos para el registro de signos vitales, eventualidades médicas y relevos de turno estandarizados (SBAR).
+- Validación: Comprobar la usabilidad y experiencia de usuario (UX) mediante pruebas directas con el personal médico objetivo.
+
+##### Restricciones y alcance del proyecto
+
+El desarrollo de Digital Clinical System está delimitado por los siguientes lineamientos técnicos y académicos:
+
+- Desarrollo y Arquitectura: Creación de una Landing Page (estática/open-source) y una Web Application (adaptable), integradas a un RESTful API propio documentado con OpenAPI/Swagger.
+- Estándares de Calidad (UX): Aplicación obligatoria de directrices de accesibilidad (a11y) e internacionalización (i18n) en la experiencia web.
+- Gestión de Código: Uso estricto de buenas prácticas en el control de versiones (GitFlow, Conventional Commits y Semantic Versioning).
+- Límite Funcional: Es una solución complementaria enfocada en la comunicación y trazabilidad cardiovascular; no pretende sustituir el sistema informático principal (HIS) de la institución.
+- Validación Académica: Las pruebas del producto se limitarán a evaluaciones heurísticas, navegación y entrevistas con usuarios representativos del sector salud.
+
 #### 1.2.2 Lean UX Process
 ##### 1.2.2.1. Lean UX Problem Statements
 ##### 1.2.2.2. Lean UX Assumptions
