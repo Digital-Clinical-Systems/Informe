@@ -266,11 +266,71 @@ El desarrollo de Digital Clinical System está delimitado por los siguientes lin
 - Validación Académica: Las pruebas del producto se limitarán a evaluaciones heurísticas, navegación y entrevistas con usuarios representativos del sector salud.
 
 #### 1.2.2 Lean UX Process
+
+El proceso Lean UX de Digital Clinical System se fundamenta en un ciclo de aprendizaje continuo enfocado en resultados (outcomes) en lugar de simples entregables. Basado en los principios de "Lean UX, 3rd Edition" de Jeff Gothelf y Josh Seiden, este enfoque transforma la problemática inicial en suposiciones (assumptions) e hipótesis medibles que se validan empíricamente durante el ciclo de vida del software.  
+
+El diseño y la validación del producto se centran en dos perfiles de usuarios directos: el personal de enfermería y los médicos especialistas cardiovasculares. Simultáneamente, el modelo contempla como clientes institucionales a los hospitales y clínicas privadas que adoptarán esta plataforma para optimizar sus flujos operativos.
+
+###### Business Outcomes y User Outcomes
+
+**Business Outcomes**
+
+- Eficiencia operativa: Reducción significativa del tiempo invertido por el personal médico en la captura y recuperación de los datos cardiovasculares.
+- Reducción de redundancia: Disminución drástica de la duplicidad de tareas al eliminar la necesidad de trasladar apuntes físicos a sistemas digitales.
+- Adopción del sistema: Alta tasa de uso activo de Digital Clinical System como herramienta complementaria principal en la rutina diaria de las unidades de cardiología.
+- Auditoría y control médico: Incremento en la precisión de la trazabilidad clínica, asegurando un historial auditable de las acciones, los responsables y los horarios exactos.
+- Conversión comercial (Leads): Aumento medible en la tasa de conversión a través de la Landing Page, reflejado en el número de instituciones de salud que solicitan demostraciones del producto.
+
+**User Outcomes**
+
+- Registro ágil: El personal de enfermería cardiovascular logra documentar la información clínica y los signos vitales con menor fricción y reduciendo la cantidad de pasos operativos.
+- Traspasos estructurados: Los profesionales de la salud estandarizan la comunicación durante los relevos de turno, transmitiendo el estado del paciente de forma clara mediante el modelo SBAR.
+- Consulta médica eficiente: Los médicos especialistas reducen significativamente el tiempo invertido en buscar y analizar la evolución clínica reciente de sus pacientes.
+- Visibilidad de riesgos: El equipo clínico identifica de manera rápida y sin confusiones los eventos críticos, las alertas del sistema y el historial de acciones previamente registradas.
+- Comprensión del producto: Los visitantes de la Landing Page asimilan de inmediato la propuesta de valor de Digital Clinical System y tienen claro el flujo para acceder a la solución.
+
+
 ##### 1.2.2.1. Lean UX Problem Statements
+
+El estado actual de la gestión de información clínica en áreas cardiovasculares se ha enfocado principalmente en el uso de sistemas hospitalarios genéricos, registros manuales redundantes y comunicación verbal no estructurada, generando una alta carga operativa para el personal de enfermería y los médicos especialistas.
+
+Lo que los productos y servicios existentes no logran abordar es la necesidad de un flujo digital especializado, ágil y trazable que evite la pérdida o duplicidad de información clínica crítica durante los cambios de turno y la atención continua.
+
+Nuestro producto, Digital Clinical System, abordará esta brecha mediante una plataforma web centralizada que facilite el registro inmediato de signos vitales, estandarice la comunicación clínica mediante el modelo SBAR y garantice la trazabilidad de responsables y acciones.
+
+Nuestro enfoque inicial será el personal de enfermería y los médicos especialistas cardiovasculares que laboran en unidades de cuidados intensivos, hospitalización y emergencias.
+
+Sabremos que tenemos éxito cuando veamos una reducción medible en el tiempo invertido en los traspasos de turno, la eliminación de registros físicos duplicados y la adopción diaria y constante de la plataforma por parte del equipo de salud.
+
 ##### 1.2.2.2. Lean UX Assumptions
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 ##### 1.2.2.4. Lean UX Canvas
+
 ### 1.3. Segmentos objetivo
+
+Digital Clinical System atiende a dos perfiles de usuarios directos que operan la plataforma en su día a día clínico, y a un cliente institucional responsable de la adopción y financiamiento del software.
+
+#### Segmento objetivo #1: Personal de enfermería cardiovascular
+
+**Perfil demográfico y profesional:** Profesionales de la salud técnicos o universitarios (24 a 55 años) que laboran en UCI, emergencias, hospitalización y áreas cardiovasculares bajo turnos rotativos y alta presión.
+
+**Comportamiento y necesidades:** Son los principales generadores de datos. Requieren interfaces ágiles para el registro de signos vitales, buscan reducir la duplicidad de trabajo entre papel/digital, y necesitan estructurar los traspasos de turno sin riesgo a omitir eventos críticos.
+
+#### Segmento objetivo #2: Médicos especialistas cardiovasculares
+
+**Perfil demográfico y profesional:** Cardiólogos, intensivistas y cirujanos (28 a 60 años) enfocados en el diagnóstico, prescripción y seguimiento de pacientes de alto riesgo.
+
+**Comportamiento y necesidades:** Son los principales consumidores de datos. Requieren acceso inmediato a la evolución consolidada del paciente. Valoran la trazabilidad exacta (responsables, fechas, intervenciones) para tomar decisiones médicas oportunas y rechazan herramientas que aumenten su carga administrativa.
+
+#### Cliente Institucional
+
+Perfil y necesidades: Hospitales, clínicas privadas y centros especializados que buscan soluciones tecnológicas complementarias a sus sistemas actuales (HIS) para auditar procesos, mejorar la comunicación interna y garantizar la continuidad en la atención.
+
+#### Sustento Estadístico y Justificación de Segmentos
+
+La elección de este mercado se fundamenta en un desafío crítico de salud pública. El Ministerio de Salud (MINSA) identifica a las enfermedades cardiovasculares como la primera causa de muerte en el Perú, en sintonía con las alertas de mortalidad global de la OMS y la OPS. De forma más específica, la Encuesta Demográfica y de Salud Familiar (ENDES) 2024 advierte que el 14.2% de los peruanos mayores de 15 años padece de hipertensión arterial.
+
+Este alto volumen de pacientes de riesgo justifica la necesidad de integrar a las dos partes vitales del ecosistema: el personal de enfermería (responsable del flujo de registro y monitoreo constante) y los médicos especialistas (responsables del flujo de validación y decisión). Abordar a ambos garantiza una trazabilidad total del paciente y resuelve la problemática operativa de las instituciones de salud.
 
 ---
 
