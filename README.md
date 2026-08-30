@@ -32,7 +32,7 @@
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
-|---------|-------|-------|-----------------------------|
+|---------|-------|-------|-----------------------------|s
 | 1.0     | [Fecha] | [Autor] | Versión inicial del documento (Estructura base) |
 
 ---
@@ -513,6 +513,30 @@ Estas pruebas se llevan a cabo mediante iteraciones ágiles, utilizando los desc
 | **9. Experiments** | Rondas de entrevistas cualitativas, simulaciones de usabilidad, testeos de comprensión del sitio comercial, análisis experto de la interfaz y recorridos cognitivos por los procesos centrales. |
 | **10. Learning** | Toda prueba ejecutada generará mejoras iterativas en el diseño interactivo del producto y reordenará estratégicamente las prioridades de desarrollo en el backlog. |
 ### 1.3. Segmentos objetivo
+Digital Clinical System atiende a dos perfiles de usuarios directos que operan la plataforma en su día a día clínico, y a un cliente institucional responsable de la adopción y financiamiento del software.
+
+#### Segmento objetivo #1: Personal de enfermería cardiovascular
+
+**Perfil demográfico y profesional:** Profesionales de la salud técnicos o universitarios (24 a 55 años) que laboran en UCI, emergencias, hospitalización y áreas cardiovasculares bajo turnos rotativos y alta presión.
+
+**Comportamiento y necesidades:** Son los principales generadores de datos. Requieren interfaces ágiles para el registro de signos vitales, buscan reducir la duplicidad de trabajo entre papel/digital, y necesitan estructurar los traspasos de turno sin riesgo a omitir eventos críticos.
+
+#### Segmento objetivo #2: Médicos especialistas cardiovasculares
+
+**Perfil demográfico y profesional:** Cardiólogos, intensivistas y cirujanos (28 a 60 años) enfocados en el diagnóstico, prescripción y seguimiento de pacientes de alto riesgo.
+
+**Comportamiento y necesidades:** Son los principales consumidores de datos. Requieren acceso inmediato a la evolución consolidada del paciente. Valoran la trazabilidad exacta (responsables, fechas, intervenciones) para tomar decisiones médicas oportunas y rechazan herramientas que aumenten su carga administrativa.
+
+#### Cliente Institucional
+
+Perfil y necesidades: Hospitales, clínicas privadas y centros especializados que buscan soluciones tecnológicas complementarias a sus sistemas actuales (HIS) para auditar procesos, mejorar la comunicación interna y garantizar la continuidad en la atención.
+
+#### Sustento Estadístico y Justificación de Segmentos
+
+La elección de este mercado se fundamenta en un desafío crítico de salud pública. El Ministerio de Salud (MINSA) identifica a las enfermedades cardiovasculares como la primera causa de muerte en el Perú, en sintonía con las alertas de mortalidad global de la OMS y la OPS. De forma más específica, la Encuesta Demográfica y de Salud Familiar (ENDES) 2024 advierte que el 14.2% de los peruanos mayores de 15 años padece de hipertensión arterial.
+
+Este alto volumen de pacientes de riesgo justifica la necesidad de integrar a las dos partes vitales del ecosistema: el personal de enfermería (responsable del flujo de registro y monitoreo constante) y los médicos especialistas (responsables del flujo de validación y decisión). Abordar a ambos garantiza una trazabilidad total del paciente y resuelve la problemática operativa de las instituciones de salud.
+
 Digital Clinical System atiende a dos perfiles de usuarios directos que operan la plataforma en su día a día clínico, y a un cliente institucional responsable de la adopción y financiamiento del software.
 
 #### Segmento objetivo #1: Personal de enfermería cardiovascular
