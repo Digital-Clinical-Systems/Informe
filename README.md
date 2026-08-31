@@ -18,10 +18,10 @@
   <br>
   <h4>Integrantes:</h4>
   <ul style="list-style-type: none; padding: 0;">
-    <li>[Código 1] - [Apellidos, Nombres 1]</li>
-    <li>[Código 2] - [Apellidos, Nombres 2]</li>
-    <li>[Código 3] - [Apellidos, Nombres 3]</li>
-    <li>[Código 4] - [Apellidos, Nombres 4]</li>
+    <li>U202417448 - Johan Giovani Huamán Cuba</li>
+    <li>[Código 2] - [Nombres 2]</li>
+    <li>[Código 3] - [Nombres 3]</li>
+    <li>[Código 4] - [Nombres 4]</li>
   </ul>
   <br>
   <h4>[Mes], [Año]</h4>
