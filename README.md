@@ -19,12 +19,12 @@
   <h4>Integrantes:</h4>
   <ul style="list-style-type: none; padding: 0;">
     <li>U202417448 - Johan Giovani Huamán Cuba</li>
-    <li>[Código 2] - [Nombres 2]</li>
+    <li>u202212214 - Oskar Rodrigo Sosa Soto</li>
     <li>[Código 3] - [Nombres 3]</li>
     <li>[Código 4] - [Nombres 4]</li>
   </ul>
   <br>
-  <h4>[Mes], [Año]</h4>
+  <h4>Setiembre, 2026</h4>
 </div>
 
 ---
@@ -169,17 +169,17 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="" alt="Foto Estudiante" width="650"/>
+      <img src="Assets/FotoEstudiante/oskar.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
     </td>
-    <td><b>Nombre:</b> Nombre Estudiante</td>
+    <td><b>Nombre:</b> Oskar Rodrigo Sosa Soto</td>
   </tr>
   <tr>
-    <td><b>Código:</b> Codigo Estudiante</td>
+    <td><b>Código:</b> U202212214</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Descripción
+      Soy Oskar Rodrigo Sosa Soto, estudiante de la carrera de Ingeniería de Software, actualmente cursando el séptimo ciclo. Tengo 21 años y me caracterizo por ser una persona responsable, organizada y puntual, comprometida con cumplir los objetivos y entregar los trabajos dentro de los plazos establecidos. Cuento con conocimientos en programación y habilidades en edición de video generado por IA, lo que me permite aportar tanto en el desarrollo técnico como en la presentación de los proyectos. Dentro del equipo, busco contribuir de manera proactiva, proponiendo ideas que ayuden a mejorar el trabajo y fomentando un ambiente colaborativo y positivo que impulse el logro de resultados de calidad.
     </td>
   </tr>
 </table>
