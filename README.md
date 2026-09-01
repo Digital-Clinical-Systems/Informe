@@ -187,17 +187,17 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="" alt="Foto Estudiante" width="550"/>
+      <img src="Assets/FotoEstudiante/angel.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
     </td>
-    <td><b>Nombre:</b> Nombre Estudiante</td>
+    <td><b>Nombre:</b> Angel Andres Valdez Melo</td>
   </tr>
   <tr>
-    <td><b>Código:</b> Codigo Estudiante</td>
+    <td><b>Código:</b> U20261D993</td>
   </tr>
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Descripcion
+      Soy Angel Andres Valdez Melo, estudiante de Ingeniería de Software. Soy egresado de la carrera de Desarrollo de Software en ISIL y realicé la convalidación para terminar mis estudios en la UPC. Tengo 22 años y me considero una persona responsable; me adapto rápido a las necesidades y siempre estoy dispuesto a aprender. Tengo conocimientos en programación, un buen nivel de inglés y experiencia actual como Supervisor de Operaciones. Dentro del equipo, busco ayudar en todas las tareas por realizar y fomentar un buen ambiente para concluir los trabajos de manera exitosa.
     </td>
   </tr>
 </table>
