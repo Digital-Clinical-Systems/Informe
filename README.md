@@ -1036,7 +1036,11 @@ En la tercera etapa se incorporaron los actores que ejecutan o consumen cada eve
 | **Canales de mensajería informal** | Sistema externo | Se utilizan para coordinar entre profesionales, sin dejar registro clínico formal ni trazabilidad. |
 
 <p align="center">
-  <img src="assets/chapter-2/event-storming-step-3.png" alt="Step 3 - Add Actors and External Systems" width="95%">
+  <img src="assets/chapter-2/event-storming-step-3-nurse.png" alt="Step 3 - Add Actors and External Systems - Enfermeros" width="95%">
+</p>
+
+<p align="center">
+  <img src="assets/chapter-2/event-storming-step-3-doctor.png" alt="Step 3 - Add Actors and External Systems - Medicos" width="95%">
 </p>
 
 #### Step 4: Add Problems and Opportunities
