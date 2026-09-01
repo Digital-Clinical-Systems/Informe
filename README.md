@@ -223,7 +223,7 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="" alt="Foto de Mathias Acuache" width="650"/>
+      <img src="Assets/FotoEstudiante/mathias.png" alt="Foto de Mathias Acuache" width="240" style="height:300px;object-fit:contain;"/>
     </td>
     <td><b>Nombre:</b> Mathias Joaquin Acuache Lucas</td>
   </tr>
@@ -233,7 +233,7 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
   <tr>
     <td>
       <b>Descripción:</b><br/>
-      Soy Mathias Joaquin Acuache Lucas, me encuentro en el sexto ciclo de la carrera de Ingeniería de Software. Tengo experiencia en C++, SQL y MongoDB, además de utilizar GitHub de manera correcta. Asimismo, tengo conocimiento en Domain Driven Design y algunos patrones de software los cuales he aplicado en diversos proyectos.
+      Soy Mathias Joaquin Acuache Lucas, me encuentro en el septimo ciclo de la carrera de Ingeniería de Software. Tengo experiencia en C++, SQL y MongoDB,tambien poder crear un Frontend y Backend basico, en vue.js, java,etc.Además de utilizar GitHub de manera correcta. Asimismo, tengo conocimiento en Domain Driven Design y algunos patrones de software los cuales he aplicado en diversos proyectos.Asimismo me considero una persona que le gusta aprender nuevas cosas, aportar las ideas que tenga en mente y apartir de ello presentar buenos trabajos.
     </td>
   </tr>
 </table>
