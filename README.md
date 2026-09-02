@@ -327,6 +327,91 @@ Esta dependencia tiene una consecuencia directa sobre la priorización: los entr
 
 ### 3.3. Product Backlog
 
+El Product Backlog ordena las User Stories y Technical Stories según la secuencia de entregas definida por el equipo. El orden no responde a la numeración de las historias ni únicamente a sus dependencias técnicas, sino al plan de construcción del producto: primero la landing page, luego la interfaz de la aplicación web, después los servicios que la sostienen y finalmente la solución integrada.
+
+Esta secuencia obedece a que cada entrega debe ser demostrable por sí misma. La landing page se publica primero porque no depende de ninguna otra pieza y permite comenzar la captación de interés institucional. La interfaz de la aplicación web se construye a continuación sobre datos simulados, lo que permite validar los flujos clínicos con usuarios reales antes de invertir en la implementación de los servicios. El RESTful API se desarrolla después, ya con los flujos validados y los recursos claramente delimitados. La última entrega incorpora las funcionalidades que solo cobran sentido con la solución completa e integrada, como las alertas por umbrales o la bitácora de auditoría.
+
+La estimación se expresa en Story Points siguiendo la sucesión de Fibonacci (1, 2, 3, 5, 8). El valor representa el esfuerzo relativo considerando complejidad, incertidumbre y volumen de trabajo, y no una cantidad de horas.
+
+| Orden | Entrega | Story ID | Título | Descripción | Story Points |
+|---:|---|---|---|---|---:|
+| 1 | Entrega 1 — Landing Page | US-01 | Visualizar la landing page | Como visitante, quiero visualizar la landing page para conocer la solución propuesta. | 2 |
+| 2 | Entrega 1 — Landing Page | US-02 | Conocer la propuesta de valor | Como visitante, quiero conocer la propuesta de valor para entender qué problema resuelve. | 2 |
+| 3 | Entrega 1 — Landing Page | US-03 | Comprender el problema que resuelve la solución | Como visitante, quiero entender por qué existe ClinicalSync. | 2 |
+| 4 | Entrega 1 — Landing Page | US-04 | Revisar cómo funciona la plataforma | Como visitante, quiero conocer el funcionamiento en pasos simples. | 2 |
+| 5 | Entrega 1 — Landing Page | US-05 | Visualizar las características clave | Como visitante, quiero conocer las características principales de la solución. | 2 |
+| 6 | Entrega 1 — Landing Page | US-06 | Revisar los beneficios según el perfil | Como visitante, quiero revisar los beneficios que aporta a mi rol. | 2 |
+| 7 | Entrega 1 — Landing Page | US-07 | Consultar los planes y el modelo de servicio | Como visitante con responsabilidad de decisión, quiero conocer los planes disponibles. | 2 |
+| 8 | Entrega 1 — Landing Page | US-08 | Consultar las preguntas frecuentes | Como visitante, quiero revisar las preguntas frecuentes para resolver dudas. | 1 |
+| 9 | Entrega 1 — Landing Page | US-09 | Conocer al equipo | Como visitante, quiero conocer al equipo detrás de la solución. | 1 |
+| 10 | Entrega 1 — Landing Page | US-10 | Solicitar información o una demostración | Como visitante interesado, quiero enviar mis datos para solicitar una demostración. | 3 |
+| 11 | Entrega 1 — Landing Page | US-12 | Acceder desde dispositivos móviles | Como visitante, quiero acceder al sitio desde un dispositivo móvil. | 3 |
+| 12 | Entrega 1 — Landing Page | US-11 | Cambiar el idioma del sitio | Como visitante, quiero alternar el idioma del sitio entre español e inglés. | 3 |
+| 13 | Entrega 1 — Landing Page | TS-09 | Despliegue de la landing page y la aplicación web | Como desarrollador, quiero automatizar el despliegue para que la solución esté disponible y actualizada. | 3 |
+| 14 | Entrega 2 — Frontend | US-17 | Consultar los pacientes asignados | Como enfermero, quiero ver los pacientes que tengo a cargo en mi turno para organizar mi trabajo. | 3 |
+| 15 | Entrega 2 — Frontend | US-18 | Registrar signos vitales | Como enfermero cardiovascular, quiero registrar los signos vitales sin recurrir a anotaciones en papel. | 5 |
+| 16 | Entrega 2 — Frontend | US-19 | Registrar la administración de un medicamento | Como enfermero, quiero dejar constancia del medicamento administrado, su dosis y su hora. | 3 |
+| 17 | Entrega 2 — Frontend | US-20 | Registrar un evento clínico relevante | Como enfermero, quiero registrar los eventos ocurridos durante el turno para que queden documentados. | 3 |
+| 18 | Entrega 2 — Frontend | US-13 | Registrar un traspaso SBAR | Como enfermero cardiovascular, quiero registrar el traspaso usando la estructura SBAR. | 5 |
+| 19 | Entrega 2 — Frontend | US-14 | Consultar el traspaso del turno anterior | Como enfermero entrante, quiero consultar el traspaso del turno saliente para continuar la atención. | 3 |
+| 20 | Entrega 2 — Frontend | US-15 | Confirmar la recepción del traspaso | Como enfermero entrante, quiero confirmar que recibí el traspaso para dejar constancia de mi responsabilidad. | 2 |
+| 21 | Entrega 2 — Frontend | US-22 | Emitir una indicación médica | Como médico especialista, quiero registrar una indicación para que enfermería la ejecute. | 3 |
+| 22 | Entrega 2 — Frontend | US-23 | Consultar las indicaciones vigentes | Como enfermero, quiero consultar las indicaciones activas para ejecutar el tratamiento correcto. | 3 |
+| 23 | Entrega 2 — Frontend | US-24 | Registrar el cumplimiento de una indicación | Como enfermero, quiero confirmar que ejecuté una indicación para dejar constancia. | 3 |
+| 24 | Entrega 2 — Frontend | US-26 | Consultar el resumen clínico del paciente | Como médico especialista, quiero ver en una sola vista la información relevante del paciente. | 8 |
+| 25 | Entrega 2 — Frontend | US-27 | Revisar la evolución reciente | Como médico especialista, quiero revisar cómo evolucionó el paciente en las últimas horas. | 5 |
+| 26 | Entrega 3 — Backend | TS-01 | Autenticación y autorización por roles | Como desarrollador, quiero implementar autenticación y control de acceso por roles. | 5 |
+| 27 | Entrega 3 — Backend | TS-02 | Gestión de pacientes mediante API | Como desarrollador, quiero exponer los recursos de pacientes para la aplicación web. | 3 |
+| 28 | Entrega 3 — Backend | TS-03 | Gestión de registros clínicos mediante API | Como desarrollador, quiero exponer los recursos de signos vitales, medicación y eventos clínicos. | 5 |
+| 29 | Entrega 3 — Backend | TS-04 | Gestión de traspasos SBAR mediante API | Como desarrollador, quiero exponer los recursos de traspaso de turno. | 5 |
+| 30 | Entrega 3 — Backend | TS-05 | Gestión de indicaciones médicas mediante API | Como desarrollador, quiero exponer los recursos de indicaciones médicas y su cumplimiento. | 5 |
+| 31 | Entrega 3 — Backend | TS-06 | Registro automático de trazabilidad | Como desarrollador, quiero que el API registre responsable y marca temporal en cada operación. | 3 |
+| 32 | Entrega 3 — Backend | TS-07 | Manejo consistente de errores del API | Como desarrollador, quiero que el API responda los errores con una estructura uniforme. | 2 |
+| 33 | Entrega 3 — Backend | TS-08 | Documentación del API con OpenAPI | Como desarrollador, quiero documentar el API para que el equipo consulte y pruebe los recursos. | 3 |
+| 34 | Entrega 4 — Aplicación completa | US-31 | Identificar al responsable de un registro | Como profesional clínico, quiero saber quién realizó un registro para confirmar su origen. | 2 |
+| 35 | Entrega 4 — Aplicación completa | US-25 | Identificar las indicaciones pendientes | Como médico especialista, quiero saber qué indicaciones no se han ejecutado. | 2 |
+| 36 | Entrega 4 — Aplicación completa | US-28 | Identificar cambios críticos mediante alertas | Como profesional clínico, quiero que el sistema señale los cambios críticos del paciente. | 5 |
+| 37 | Entrega 4 — Aplicación completa | US-29 | Priorizar los pacientes según su riesgo | Como profesional clínico, quiero que los pacientes se ordenen según su nivel de riesgo. | 3 |
+| 38 | Entrega 4 — Aplicación completa | US-16 | Generar el traspaso a partir de lo registrado | Como enfermero saliente, quiero que el traspaso se preconstruya con lo ya registrado en mi turno. | 5 |
+| 39 | Entrega 4 — Aplicación completa | US-21 | Identificar la documentación pendiente | Como enfermero, quiero conocer qué me falta registrar antes de cerrar mi turno. | 3 |
+| 40 | Entrega 4 — Aplicación completa | US-30 | Consultar la bitácora de acciones del paciente | Como coordinador clínico, quiero revisar el historial de acciones registradas sobre un paciente. | 5 |
+| 41 | Entrega 4 — Aplicación completa | US-32 | Consultar el historial de cambios de un registro | Como coordinador clínico, quiero conocer las modificaciones aplicadas a un registro. | 3 |
+
+#### Distribución por entrega
+
+| Entrega | Alcance | Historias | Story Points |
+|---|---|---:|---:|
+| **Entrega 1 — Landing Page** | Sitio promocional público, adaptable, internacionalizado y desplegado. | 13 | 28 |
+| **Entrega 2 — Frontend** | Interfaz de la aplicación web con los flujos clínicos operando sobre datos simulados. | 12 | 46 |
+| **Entrega 3 — Backend** | RESTful API con seguridad, trazabilidad automática, manejo de errores y documentación. | 8 | 31 |
+| **Entrega 4 — Aplicación completa** | Integración de frontend y backend, más las funcionalidades que requieren la solución completa. | 8 | 28 |
+| **Total** | — | **41** | **133** |
+
+#### Distribución por Epic
+
+| Epic | Historias | Story Points |
+|---|---:|---:|
+| EP-01 Landing Page informativa | 12 | 25 |
+| EP-02 Gestión de traspaso clínico SBAR | 4 | 15 |
+| EP-03 Registro clínico del paciente | 5 | 17 |
+| EP-04 Indicaciones médicas y cumplimiento | 4 | 11 |
+| EP-05 Soporte a la decisión clínica | 4 | 21 |
+| EP-06 Trazabilidad y auditoría clínica | 3 | 10 |
+| EP-07 RESTful API y plataforma | 9 | 34 |
+| **Total** | **41** | **133** |
+
+#### Consideraciones sobre el orden
+
+Dentro de la Entrega 1, las historias de contenido se ubican antes que la internacionalización y la adaptación a dispositivos móviles, porque estas últimas se aplican sobre secciones ya construidas. El despliegue cierra la entrega para que el sitio quede publicado y pueda iniciarse la medición del objetivo BG-01.
+
+Dentro de la Entrega 2, el registro clínico precede al traspaso SBAR porque este último se construye sobre la información que aquel produce, y ambos preceden a las vistas del médico especialista, que consumen los datos generados por el personal de enfermería. Esta entrega opera con datos simulados, de modo que los flujos puedan validarse con usuarios antes de comprometer la implementación de los servicios.
+
+La Entrega 3 comienza por la autenticación y los recursos de pacientes, ya que el resto de los recursos depende de ambos, y culmina con el manejo uniforme de errores y la documentación OpenAPI, que se definen una vez conocidos todos los recursos publicados.
+
+La Entrega 4 agrupa lo que exige la solución integrada: las alertas y la priorización requieren datos reales fluyendo desde el API, la bitácora y el historial de cambios dependen de la trazabilidad implementada en TS-06, y la preconstrucción del traspaso requiere que el registro clínico esté persistido en el backend.
+
+Este orden constituye la referencia directa para la conformación de los Sprint Backlogs del Capítulo V, donde se detallará qué historias entran en cada sprint según la capacidad real del equipo.
+
 ---
 
 ## Capítulo IV: Product Design
