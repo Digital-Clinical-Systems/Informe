@@ -391,33 +391,40 @@ Las entrevistas fueron grabadas en video previo consentimiento de los participan
 
 ##### Segmento objetivo 1: Personal de enfermería cardiovascular
 
-###### Entrevista 1
+###### Entrevista 1 — Samuel Akerman
 
 <table border="1">
   <tr>
     <td width="40%">
-      <b>Nombres y apellidos:</b> [Nombres y apellidos]<br>
-      <b>Edad:</b> [Edad] años<br>
-      <b>Distrito:</b> [Distrito]<br>
-      <b>Ocupación:</b> [Rol y especialidad]<br>
-      <b>Área de trabajo:</b> [Área]<br>
+      <b>Nombres y apellidos:</b> Samuel Akerman<br>
+      <b>Edad:</b> 26 años<br>
+      <b>Distrito:</b> Surquillo, Lima<br>
+      <b>Ocupación:</b> Licenciado en Enfermería, especialista en Cuidados Intensivos Cardiológicos<br>
+      <b>Experiencia laboral:</b> 2 años en el sector salud<br>
+      <b>Área de trabajo:</b> UCI Cardiovascular<br>
+      <b>Tipo de establecimiento:</b> Clínica privada de alta complejidad<br>
+      <b>Modalidad de turno:</b> Guardias rotativas de 12 horas (07:00–19:00 / 19:00–07:00)<br>
+      <b>Nivel tecnológico:</b> Intermedio<br>
       <b>Timing:</b> [hh:mm:ss - hh:mm:ss]<br>
       <b>Duración:</b> [mm:ss]<br>
-      <b>Entrevistador:</b> [Integrante del equipo]
+      <b>Entrevistador:</b> Oskar Rodrigo Sosa Soto
     </td>
     <td align="center">
-      <img src="assets/chapter-2/entrevista-enfermeria-1.png" alt="Entrevista 1 - Enfermería cardiovascular" width="85%">
+      <img src="assets/chapter-2/entrevista-enfermeria-1.png" alt="Entrevista 1 - Samuel Akerman" width="85%">
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <b>Enlace:</b> <a href="[URL del video en Microsoft Stream]">[URL del video en Microsoft Stream]</a>
+      <b>Enlace:</b>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQDCvv-X8xukTYr3tB9DGJgIAUSkFvzdSWYZ3wmXkWXsx0g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6jnLQV">Ver entrevista en Microsoft Stream</a>
       <br><br>
-      <b>Resumen:</b> [Descripción de cómo el entrevistado realiza hoy el registro clínico durante el turno, qué herramientas utiliza y qué dificultades encuentra.]
+      <b>Resumen:</b> Samuel Akerman, licenciado en enfermería especializado en cuidados intensivos cardiológicos, trabaja en la UCI cardiovascular de una clínica privada bajo guardias rotativas de 12 horas, con dos o tres pacientes críticos a su cargo. Describió que el registro clínico ocurre en dos tiempos: durante la atención anota "en caliente" en un kardex manual o cuaderno borrador que mantiene al costado de la cama, y recién al final del turno traslada esa información al sistema informático. El motivo es estructural y no de preferencia: la única computadora está fija en la estación central de enfermería y no puede dejar solo a un paciente crítico para ir a digitar. En sus palabras, el papel "no se cuelga ni me pide contraseña", lo que lo vuelve la opción viable cuando un paciente se descompensa.
       <br><br>
-      [Descripción de la mecánica del cambio de turno en su servicio, situaciones de pérdida u omisión de información y motivos por los que recurre a registros complementarios.]
+      Sobre el sistema institucional, un EHR comercial, señaló que es pesado y poco intuitivo, con demasiados clics para tareas simples: registrar una presión arterial o una saturación de oxígeno le exige abrir tres pestañas distintas. Añadió que el sistema no está adaptado al flujo de cardiología y le solicita campos que no aplican a una unidad de cuidados intensivos. Estimó que dedica entre 2.5 y 3 horas de cada guardia de 12 horas a documentar, cerca del 25% de su tiempo, y que las tareas más lentas son la nota de enfermería narrativa y la consolidación del balance hídrico al cierre, que debe sumar a mano y luego transcribir incidencia por incidencia.
       <br><br>
-      [Condiciones bajo las que adoptaría una herramienta digital y funcionalidades que considera indispensables.]
+      El relevo se realiza de forma presencial, cama por cama, transmitiendo diagnóstico principal, eventos críticos del turno, infusiones de inotrópicos activas, balances de líquidos, pendientes de laboratorio y estado hemodinámico y neurológico. Relató un caso concreto ocurrido meses atrás: un cambio en la dosis de nitroglicerina de un paciente infartado no fue anotado en la hoja física ni digitado a tiempo, y el turno entrante mantuvo la dosis anterior durante dos horas hasta que el médico revisó la indicación. Atribuyó el error a haber confiado en la transmisión verbal durante un relevo apresurado. Identificó además dos fallas de trazabilidad: en el papel las firmas resultan ilegibles o se omite el sello, y en el sistema, cuando alguien deja la sesión abierta, los registros quedan atribuidos a otro usuario, lo que calificó como un problema serio de responsabilidad legal.
+      <br><br>
+      Respecto de las condiciones para adoptar una herramienta digital, fue explícito en que debe ser accesible desde la cabecera del paciente, idealmente en tablet o dispositivo móvil, permitir guardar con un par de toques sin formularios extensos, y ofrecer una pantalla de resumen visual donde se vean de un vistazo las curvas de funciones vitales y los eventos del día. Manifestó comodidad para aprender sistemas nuevos siempre que "el sistema ayude y no estorbe", y estimó adaptarse en un día si la interfaz se asemeja a las aplicaciones que usa cotidianamente en su celular. Señaló que actualmente la clínica no provee tablets y que emplea su teléfono personal para coordinar por mensajería con los médicos residentes y calcular dosis. Consultar qué ocurrió con un paciente le toma un par de minutos en las hojas físicas, pero entre 5 y 10 minutos si necesita historial o resultados de días previos desde el sistema.
     </td>
   </tr>
 </table>
@@ -591,7 +598,7 @@ Los porcentajes se calculan sobre el total de entrevistas efectivamente registra
 
 | Segmento | Entrevistados | Cantidad |
 |---|---|---|
-| Personal de enfermería cardiovascular | [Nombres de los tres entrevistados] | 3 |
+| Personal de enfermería cardiovascular | Samuel Akerman, [pendiente], [pendiente] | 3 |
 | Médicos especialistas cardiovasculares | [Nombres de los tres entrevistados] | 3 |
 | **Total** | — | **6** |
 
