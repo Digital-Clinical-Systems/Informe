@@ -610,15 +610,256 @@ El sistema funciona de la siguiente manera:
 
 ### 5.2. Landing Page, Services & Applications Implementation
 #### 5.2.1. Sprint 1
+
+El Sprint 1 se enfocó en el desarrollo e implementación de la Landing Page de ClinicalSync, la cual representa el primer punto de contacto entre la solución y los usuarios potenciales.
+Este sprint tuvo como objetivo establecer una presencia digital sólida que comunique de manera clara la propuesta de valor del producto.
+
+Durante este sprint, se desarrollaron e integraron las secciones principales de la Landing Page, incluyendo presentación del producto, funcionalidades clave, llamadas a la acción, equipo desarrollador, sectores beneficiados, 
+preguntas frecuentes, sección de contacto y testimonios, siguiendo los lineamientos de diseño y los wireframes definidos previamente en el Capítulo IV. Asimismo, se priorizó la usabilidad, accesibilidad y coherencia visual, con el fin de ofrecer una experiencia atractiva y profesional.
+
+
 ##### 5.2.1.1. Sprint Planning 1
+
+<table>
+  <tr> <th colspan="5">Sprint #</th> <th colspan="9">Sprint 1</th> </tr> 
+  <tr> <td colspan="13">Sprint Planning Background</td> </tr> 
+  <tr> <td colspan="5">Date</td> <td colspan="8">[Fecha del Sprint Planning]</td> </tr> 
+  <tr> <td colspan="5">Time</td> <td colspan="8">[Hora]</td> </tr> 
+  <tr> <td colspan="5">Location</td> <td colspan="8">Reunión remota / Presencial</td> </tr> 
+  <tr> <td colspan="5">Prepared By</td> <td colspan="8">Sosa Soto, Oskar Rodrigo</td> </tr> 
+  <tr> <td colspan="5">Attendees (to planning meeting)</td> <td colspan="8">Sosa Soto, Oskar Rodrigo / Acuache Lucas, Mathias Joaquin / Valdez Melo, Angel Andres / Huamán Cuba, Johan Giovani / Ojanama Abanto, Johnny Alexander</td> </tr> 
+  <tr> <td colspan="5">Sprint n-1 Review Summary</td> <td colspan="8">No aplica - Este es el primer Sprint del proyecto</td> </tr> 
+  <tr> <td colspan="5">Sprint n-1 Retrospective Summary</td> <td colspan="8">No aplica - Este es el primer Sprint del proyecto</td> </tr> 
+  <tr> <td colspan="13">Sprint Goal & User Stories</td> </tr> 
+  <tr> <td colspan="5">Sprint 1 Goal</td> <td colspan="8"> <strong>"Our focus is on delivering a fully functional and user-friendly Landing Page for ClinicalSync, accompanied by complete and well-structured documentation. We believe this will provide an engaging first impression and clearly communicate the value proposition of our solution for enhancing clinical processes in cardiovascular nursing. This will be validated when the Landing Page is successfully deployed and accessible online, with all core sections (hero, how it works, features, benefits, FAQs, and contact) working correctly, and all corresponding documentation completed."</strong> </td> </tr> 
+  <tr> <td colspan="5">Sprint 1 Velocity</td> <td colspan="8">[TBD] Story Points</td> </tr> 
+  <tr> <td colspan="5">Sum of Story Points</td> <td colspan="8">[TBD] Story Points</td> </tr> 
+</table>
+
+
 ##### 5.2.1.2. Aspect Leaders and Collaborators
+
+<div align="center">
+  <table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13px; text-align: center;">
+    <thead>
+      <tr style="background-color: #f2f2f2;">
+        <th style="border: 1px solid #dddddd; padding: 10px;">Team Member (Last Name, First Name)</th>
+        <th style="border: 1px solid #dddddd; padding: 10px;">GitHub Username</th>
+        <th style="border: 1px solid #dddddd; padding: 10px;">Diseño del Layout Principal (L/C)</th>
+        <th style="border: 1px solid #dddddd; padding: 10px;">Navegacion e Internacionalización (L/C)</th>
+        <th style="border: 1px solid #dddddd; padding: 10px;">Secciones Informativas y CTA (L/C)</th>
+        <th style="border: 1px solid #dddddd; padding: 10px;">Despliegue y GitFlow (L/C)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Sosa Soto, Oskar Rodrigo</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">YakuzaMeen</td>
+        <td style="border: 1px solid #dddddd; padding: 8px; font-weight: bold;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Acuache Lucas, Mathias Joaquin</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">MathiasA25</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Valdez Melo, Angel Andres</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">AngelValdezM</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Huamán Cuba, Johan Giovani</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Johancuba</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #dddddd; padding: 8px;">Ojanama Abanto, Johnny Alexander</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">JohnnyGZ41</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">[L/C]</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 ##### 5.2.1.3. Sprint Backlog 1
+
+
+*(Nota: Esta sección se completará una vez se definan el Product Backlog y las User Stories correspondientes a este ciclo).*
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Sprint #</th>
+      <th align="left" colspan="7">Sprint 1</th>
+    </tr>
+    <tr>
+      <th align="left" colspan="2">User Story</th>
+      <th align="left" colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th align="left">Id</th>
+      <th align="left">Title</th>
+      <th align="left">Id</th>
+      <th align="left">Title</th>
+      <th align="left">Description</th>
+      <th align="left">Estimation<br>(Hours)</th>
+      <th align="left">Assigned To</th>
+      <th align="left">Status<br>(To-do / In-Process / To-Review / Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8" align="center"><em>[Pendiente de definir tareas y asignaciones para el Sprint 1]</em></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 ##### 5.2.1.4. Development Evidence for Sprint Review
+
+*(Nota: El historial de commits se completará a medida que se inicie el desarrollo y se integren las ramas `feature/` en el repositorio).*
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Digital-Clinical-Systems/Landing-Page | develop | [TBD] | [TBD] | [TBD] | [TBD] |
+
+
 ##### 5.2.1.5. Execution Evidence for Sprint Review
+
+## 1. Resumen de Logros del Sprint
+En este Sprint, el equipo se ha enfocado en el diseño, maquetación y despliegue de la interfaz principal de **ClinicalSync**. 
+Se ha logrado consolidar la identidad visual de la marca y la arquitectura de información necesaria para comunicar una solución técnica compleja de manera sencilla y efectiva.
+
+**Hitos alcanzados:**
+* **Desarrollo de Interfaz:** Implementación completa de la Landing Page utilizando estándares modernos de diseño UI/UX.
+* **Optimización de Activos:** Organización y renombrado semántico de recursos visuales para mejorar la mantenibilidad del proyecto.
+* **Propuesta de Valor:** Estructuración de las secciones de monetización (Planes) y validación social (Testimonios).
+* **Navegación:** Configuración de una experiencia de usuario fluida y orientada a la conversión (CTAs).
+
+## 2. Screenshots de las Principales Vistas
+
+A continuación, se presentan las capturas de pantalla que sirven como evidencia de la implementación funcional del sitio. Las vistas se organizan según las secciones de navegación del Landing Page (Plataforma, El problema, ¿Cómo funciona?, Características, Beneficios, Planes, Nosotros y Preguntas frecuentes), indicando el propósito de cada una y el perfil de visitante al que atiende (racional, emocional o recurrente).
+
+### A. Plataforma (Portada y Propuesta de Valor)
+
+![Hero Section](assets/chapter-5/sprint-1/hero-section.png)
+*Sección de portada que presenta la propuesta de valor central de la plataforma: una solución digital diseñada específicamente para mejorar los procesos de enfermería cardiovascular mediante la centralización de información clínica, la facilitación de la comunicación entre turnos y la garantía de trazabilidad en eventos críticos. Incluye los Call-To-Action principales que dirigen al visitante recurrente hacia la aplicación desplegada, así como el selector de idioma (ES/EN) y el acceso a "Iniciar sesión".*
+
+### B. El Problema
+
+![The Problem](assets/chapter-5/sprint-1/problem-section.png)
+*Explica la problemática que da origen a ClinicalSync: la información clínica dispersa y el registro manual dificultan la continuidad asistencial y la trazabilidad de eventos críticos en enfermería cardiovascular. Esta sección atiende al perfil de visitante racional, ayudándole a reconocer la necesidad que resuelve la plataforma.*
+
+![Proposal & Sectors Benefiting](assets/chapter-5/sprint-1/proposal-sectors.png)
+*Complementa la sección del problema mostrando cómo ClinicalSync impacta directamente en instituciones de salud como hospitales, clínicas privadas y centros especializados en cardiología, proporcionando soluciones concretas para optimizar la gestión de procesos críticos.*
+
+### C. ¿Cómo Funciona?
+
+![How it works](assets/chapter-5/sprint-1/how-it-works.png)
+*Describe el flujo integral de la plataforma, mostrando cómo el personal de enfermería cardiovascular puede registrar signos vitales, documentar traspasos SBAR (Situación, Antecedentes, Evaluación y Recomendaciones), consultar historiales clínicos y mantener trazabilidad de eventos para mejorar la comunicación entre turnos.*
+
+### D. Características
+
+![Features](assets/chapter-5/sprint-1/main-features.png)
+*Detalla las funcionalidades clave como registro de pacientes y citas, monitoreo de signos vitales, gestión de traspasos SBAR, seguimiento de tratamientos, registro de eventos críticos, alertas automáticas ante fluctuaciones cardiovasculares anormales y sistema de auditoría inalterable.*
+
+### E. Beneficios
+
+![Benefits](assets/chapter-5/sprint-1/main-benefits.png)
+*Ilustra cómo ClinicalSync reduce errores en documentación clínica, optimiza el tiempo del personal de salud en tareas de registro, mejora la continuidad del cuidado del paciente y fortalece la eficiencia operativa mediante la digitalización y trazabilidad de procesos críticos.*
+
+### F. Planes
+
+![Plans](assets/chapter-5/sprint-1/plans-section.png)
+*Presenta los planes y precios disponibles de ClinicalSync para las instituciones de salud, detallando las características incluidas en cada nivel de servicio. Esta sección atiende al perfil de visitante racional, ya que le entrega la información necesaria para comparar opciones y facilitar la decisión de contratación de la plataforma.*
+
+### G. Nosotros (Equipo)
+
+![Team](assets/chapter-5/sprint-1/dev-team.png)
+*Presenta a los integrantes del equipo responsable del diseño, desarrollo e implementación de ClinicalSync, incluyendo sus perfiles y motivaciones. Esta sección atiende al perfil de visitante emocional, generando confianza al mostrar quiénes están detrás de la solución.*
+
+### H. Preguntas Frecuentes
+
+![FAQ](assets/chapter-5/sprint-1/faq-section.png)
+*Aborda las consultas comunes del personal de enfermería cardiovascular y administradores de instituciones de salud sobre seguridad de datos, facilidad de acceso, integración con sistemas existentes, escalabilidad de la plataforma y soporte técnico disponible.*
+
+### I. Testimonios
+
+![Testimonials](assets/chapter-5/sprint-1/testimonials-section.png)
+*Presenta experiencias y perspectivas del personal de salud e instituciones que han validado ClinicalSync, destacando mejoras en eficiencia operativa, reducción de errores, mejor comunicación entre turnos y fortalecimiento de la continuidad clínica. Esta sección atiende al perfil de visitante emocional, generando confianza a través de la experiencia de terceros y permitiendo conocer los beneficios del producto sin haberlo usado.*
+
+### J. Contacto con Digital Clinical Systems
+
+![Contact](assets/chapter-5/sprint-1/contact-section.png)
+*Proporciona los canales de comunicación disponibles para hospitales, clínicas, centros especializados y profesionales de salud interesados en conocer más sobre ClinicalSync, solicitar demostraciones, consultar precios o gestionar suscripciones a la plataforma.*
+
+
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios que serán ofrecidos a través de la plataforma web de ClinicalSync. 
+Estos servicios incluirán funcionalidades como el registro de pacientes y citas, traspasos SBAR, generación de alertas ante fluctuaciones cardiovasculares inusuales del paciente y registro de los signos vitales del paciente.
+
+Durante el presente Sprint 1, el enfoque del equipo estuvo centrado exclusivamente en el diseño y desarrollo de la Landing Page del producto, 
+con el objetivo de definir la propuesta de valor, los segmentos de usuarios y la experiencia inicial del sistema. Debido a este alcance, 
+no se implementaron ni desplegaron servicios web funcionales, por lo que no se cuenta aún con endpoints operativos ni documentación técnica asociada 
+a su consumo.
+
+
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de implementación de la plataforma en un entorno de producción. Además, se presentarán los hitos más importantes que marcarán el despliegue del proyecto y garantizarán su disponibilidad para los usuarios finales.
+
+URL de despliegue del Landing Page: [https://github.com/Digital-Clinical-Systems/Landing-Page](https://github.com/Digital-Clinical-Systems/Landing-Page)
+
+1. Para la Landing Page, nuestro equipo creó una rama denominada `develop` dentro del repositorio, en la cual se organizaron y almacenaron todos los archivos correspondientes al desarrollo.
+<p align="center">
+  <img src="assets/chapter-5/sprint-1/deployment-step-1.png" alt="deployment branch setup" width="1000">
+</p>
+
+2. Posteriormente, nos dirigimos a configuración y empleamos GitHub Pages, el servicio de alojamiento para sitios estáticos de GitHub, para publicar y poner en línea nuestra Landing Page.
+<p align="center">
+  <img src="assets/chapter-5/sprint-1/deployment-step-2.png" alt="deployment github pages config" width="1000">
+</p>
+
+3. Se seleccionó la rama previamente configurada y se procedió con el despliegue de la página.
+<p align="center">
+  <img src="assets/chapter-5/sprint-1/deployment-step-3.png" alt="deployment branch selection" width="1000">
+</p>
+
+
+4. Finalmente, obtuvimos el enlace de publicación, que nos permite acceder y visualizar la Landing Page en línea.
+<p align="center">
+  <img src="assets/chapter-5/sprint-1/deployment-step-4.png" alt="deployment successful url" width="1000">
+</p>
+
+
+
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
-*(Nota: Repetir esta estructura para Sprint 2, 3, y 4 según corresponda cada hito de evaluación)*
+
+La herramienta de Insights de GitHub demuestra que todos los miembros del equipo (Oskar, Mathias, Angel, Johan y Johnny) han colaborado activamente mediante la subida de commits. Las labores fueron distribuidas de forma equitativa para garantizar que el Layout, la Navegación, el Diseño Responsivo, la Internacionalización y el despliegue de la Landing Page se completaran en los tiempos estimados del Sprint.
+
+<p align="center">
+  <img src="assets/chapter-5/sprint-1/team-commits.png" alt="team commits insight" width="1000">
+</p>
+
+
 ### 5.3. Validation Interviews
 #### 5.3.1. Diseño de Entrevistas
 #### 5.3.2. Registro de Entrevistas
