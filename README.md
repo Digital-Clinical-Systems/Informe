@@ -474,6 +474,140 @@ Then it is logged in the audit log with full details
 
 
 #### 5.1.4. Software Deployment Configuration
+
+En esta sección el equipo especifica la configuración del despliegue de la solución **ClinicalSync**, incluyendo los procedimientos necesarios para que,
+a partir de los repositorios de código fuente, se pueda realizar la publicación exitosa de los productos digitales que componen el sistema: Landing Page, Frontend Web Application y Web Services (Backend).
+
+La solución se encuentra estructurada bajo una arquitectura desacoplada, donde cada componente es desplegado de manera 
+independiente utilizando plataformas especializadas en la nube, lo que permite mejorar la escalabilidad, disponibilidad y mantenimiento del sistema.
+
+
+### Componentes de Despliegue
+
+- **Landing Page**: desplegada en GitHub Pages.
+- **Frontend Web Application (Angular)**: desplegada en Firebase Hosting.
+- **Web Services RESTful API (Backend)**: desplegado en un Cloud Provider (Render / Heroku).
+
+### 1. Control de Versiones
+
+El proyecto utiliza **Git** como sistema de control de versiones y **GitHub** como plataforma para la gestión de repositorios.
+
+### Estrategia de ramas
+
+- `main`: contiene la versión estable lista para producción.
+- `develop`: integra las funcionalidades en desarrollo.
+- `feature/*`: ramas destinadas al desarrollo de nuevas funcionalidades.
+
+
+### 2. Despliegue de Landing Page (GitHub Pages)
+
+La Landing Page es un sitio web responsivo construido con HTML5, CSS3 y JS.
+
+### Pasos de despliegue
+
+#### 1. Inicializar y preparar el repositorio
+- `git init`
+- `git add .`
+- `git commit -m "deploy landing page"`
+
+#### 2. Conectar el repositorio con GitHub
+- `git branch -M main`
+- `git remote add origin <repo-url>`
+- `git push -u origin main`
+
+#### 3. Configurar GitHub Pages
+- Ir a **Settings** del repositorio.
+- Acceder a la sección **Pages**.
+- Seleccionar:
+    - **Source**: Deploy from branch
+    - **Branch**: main
+    - **Folder**: / (root)
+
+#### Resultado: 
+Publicación automática bajo un subdominio HTTPS gestionado por GitHub.
+
+
+### 3. Despliegue del Frontend Web Application (Angular en Firebase Hosting)
+
+La aplicación es una *Single Page Application* (SPA) desarrollada en Angular 17+ y se despliega utilizando Firebase Hosting.
+
+### Pasos de despliegue
+
+#### 1. Subir el proyecto al repositorio
+- `git add .`
+- `git commit -m "deploy frontend"`
+- `git push origin main`
+
+#### 2. Configurar en Firebase
+- Acceder a: https://firebase.google.com/
+- Iniciar Sesión y dirigirse a 'Ir a Consola'.
+- Seleccionar **Crear un proyecto de Firebase nuevo → Escribir el nombre del proyecto (`clinicalsync-frontend`) → Crear Proyecto**.
+- Instalar Firebase CLI: `npm install -g firebase-tools`
+- Iniciar sesión en Firebase CLI: `firebase login`
+- Inicializar el proyecto: `firebase init`
+    - Seleccionar **Hosting**.
+    - Seleccionar el proyecto creado en Firebase.
+    - Configurar el directorio público: `dist/browser` (o `dist/`).
+    - Configurar como SPA: Sí.
+    - Por el momento decimos que no se configure GitHub Action para despliegue automático.
+
+#### 3. Configurar variables de entorno
+- Configurar el archivo `environment.prod.ts` para apuntar a la URL pública del RESTful API:
+  - `apiBaseUrl: 'https://<backend-url>'`
+
+#### 4. Configurar el build
+- **Build command**:
+  - `ng build`
+- **Publish directory**:
+  - `dist/browser`
+
+#### 5. Ejecutar Despliegue
+- Ejecutamos el comando de compilación: `ng build`
+- Ejecutamos el comando de publicación: `firebase deploy --only hosting`
+- Firebase genera una URL pública accesible.
+
+
+### 4. Despliegue de los Web Services RESTful API (Cloud Provider)
+
+El backend desarrollado en Spring Boot y documentado con OpenAPI (Swagger) ha sido configurado para su despliegue continuo en un servicio Platform as a Service (PaaS) como Render o Heroku.
+
+### Pasos de despliegue
+
+#### 1. Configurar credenciales y entorno
+- Ajustar la configuración del archivo `application-prod.properties`.
+- Inyectar dinámicamente las credenciales de entorno para la conexión segura a la base de datos (MySQL gestionado en la nube).
+
+#### 2. Construcción del artefacto
+- Empaquetar y construir el archivo `.jar` usando Maven ejecutando el comando:
+  - `mvn clean package -DskipTests`
+
+#### 3. Publicación en el servicio Cloud
+- Vincular el repositorio (rama `main`) al servicio PaaS (ej. Render/Heroku) para disparar el despliegue de la imagen/artefacto.
+- El Cloud Provider asigna los recursos, levanta el servidor y genera una URL HTTPS pública.
+
+#### 4. Documentación desplegada
+- Una vez levantado el servidor, la documentación estandarizada Swagger UI queda expuesta públicamente.
+- **Ruta de acceso:** `https://<backend-url>/swagger-ui.html`
+
+
+### 5. Integración de Componentes
+
+El sistema funciona de la siguiente manera:
+
+- La **Landing Page** actúa como punto de entrada y promoción, redirigiendo al usuario mediante llamados a la acción (CTA) hacia el frontend.
+- El **Frontend** (SPA en Angular) gestiona la experiencia de usuario y consume los servicios expuestos por el backend.
+- El **Backend** (Spring Boot RESTful API) procesa la lógica de negocio, se conecta a la base de datos MySQL en la nube para persistir la información y devuelve las respuestas estructuradas al frontend.
+
+### 6. Consideraciones de Despliegue
+
+- Uso obligatorio de variables de entorno para configuraciones sensibles (credenciales de BD, tokens, URIs).
+- Separación de entornos (desarrollo y producción).
+- Evitar exponer credenciales dentro del código fuente bajo ninguna circunstancia.
+- Verificación de URLs públicas y endpoints de Swagger después de cada despliegue.
+- Mantener compatibilidad entre versiones de frontend y backend, respetando el control de versiones semántico.
+
+
+
 ### 5.2. Landing Page, Services & Applications Implementation
 #### 5.2.1. Sprint 1
 ##### 5.2.1.1. Sprint Planning 1
