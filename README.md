@@ -169,7 +169,7 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="Assets/FotoEstudiante/oskar.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
+      <img src="assets/chapter-1/FotoEstudiante/oskar.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
     </td>
     <td><b>Nombre:</b> Oskar Rodrigo Sosa Soto</td>
   </tr>
@@ -187,7 +187,7 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="Assets/FotoEstudiante/angel.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
+      <img src="assets/chapter-1/FotoEstudiante/angel.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
     </td>
     <td><b>Nombre:</b> Angel Andres Valdez Melo</td>
   </tr>
@@ -223,7 +223,7 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 <table>
   <tr>
     <td rowspan="4" align="center">
-      <img src="Assets/FotoEstudiante/mathias.png" alt="Foto de Mathias Acuache" width="240" style="height:300px;object-fit:contain;"/>
+      <img src="assets/chapter-1/FotoEstudiante/mathias.png" alt="Foto de Mathias Acuache" width="240" style="height:300px;object-fit:contain;"/>
     </td>
     <td><b>Nombre:</b> Mathias Joaquin Acuache Lucas</td>
   </tr>
