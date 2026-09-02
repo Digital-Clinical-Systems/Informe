@@ -279,6 +279,84 @@ coherencia entre la propuesta del informe y el producto a desarrollar.
 
 
 #### 5.1.2. Source Code Management
+
+En esta sección se describe la gestión del código fuente del proyecto ClinicalSync, el cual se ha implementado utilizando GitHub como plataforma principal de control de versiones. 
+Este sistema permite al equipo trabajar de forma colaborativa, mantener un historial completo de cambios y asegurar la correcta integración de las funcionalidades desarrolladas durante el proyecto.
+
+El repositorio principal del proyecto es el siguiente:
+
+- **Informe Repository**: [https://github.com/Digital-Clinical-Systems/Informe.git](https://github.com/Digital-Clinical-Systems/Informe.git)
+- **Landing Page Repository**: [https://github.com/Digital-Clinical-Systems/Landing-Page](https://github.com/Digital-Clinical-Systems/Landing-Page)
+- **Frontend Web App Repository**: [https://github.com/Digital-Clinical-Systems/FrontClinicalSync](https://github.com/Digital-Clinical-Systems/FrontClinicalSync)
+- **Backend (Web Services) Repository**: [https://github.com/Digital-Clinical-Systems/BackClinicalSync](https://github.com/Digital-Clinical-Systems/BackClinicalSync)
+
+### GitFlow Workflow implementado
+
+El equipo ha adoptado la metodología GitFlow como modelo de control de versiones, lo cual permite separar el desarrollo de nuevas funcionalidades, la integración de cambios y la preparación de versiones estables.
+
+Las ramas principales utilizadas son:
+
+- **main**: rama principal que contiene la versión estable del proyecto.
+- **develop**: rama de integración donde se consolidan todas las funcionalidades completadas antes de ser llevadas a producción.
+- **feature/**: ramas utilizadas para el desarrollo de funcionalidades específicas del sistema.
+- **release/** : Ramas utilizadas para preparar versiones finales para despliegue y corregir errores críticos en producción, respectivamente.
+
+### Feature Branches utilizados en el proyecto
+
+El desarrollo de la Landing Page de ClinicalSync se ha organizado mediante ramas feature específicas por componente funcional:
+
+- feature/hero → sección principal de presentación
+- feature/benefits → sección de beneficios del sistema
+- feature/call-to-action → botones y acciones de conversión
+- feature/characteristic → características del producto
+- feature/footer → pie de página del sistema
+- feature/how-it-works → explicación del funcionamiento de ClinicalSync
+- feature/pricing → sección de planes o precios
+- feature/team → sección de equipo desarrollador
+
+Esta organización permite un desarrollo modular, donde cada funcionalidad se implementa de forma independiente antes de integrarse a la rama develop.
+
+
+### Convención de ramas
+
+El proyecto sigue la siguiente convención de nomenclatura:
+
+- feature/nombre-descriptivo → nuevas funcionalidades
+- develop → integración de funcionalidades
+- main → versión estable del sistema
+
+### Semantic Versioning
+
+Aunque en esta primera etapa se ha trabajado principalmente en la Landing Page, el proyecto adopta el estándar de versionado semántico:
+
+MAJOR.MINOR.PATCH
+
+- MAJOR: cambios estructurales grandes
+- MINOR: nuevas funcionalidades
+- PATCH: corrección de errores
+
+Versión actual del proyecto: v1.0.0 (Landing Page inicial)
+
+### Conventional Commits
+
+Para mantener un historial claro de cambios, el equipo utiliza Conventional Commits en todos los commits del repositorio.
+
+##### Tipos de commits utilizados:
+
+- `feat`: Nueva funcionalidad
+- `fix`: Corrección de errores
+- `docs`: Cambios en documentación
+- `style`: Cambios en formato/estilo sin afectar la lógica
+- `refactor`: Reestructuración del código sin cambio funcional
+- `test`: Cambios en tests
+- `build`: Cambios que afectan al sistema de compilación o dependencias
+- `ci`: Configuraciones de integración continua
+- `chore`: Tareas menores de mantenimiento
+- `perf`: Mejoras de rendimiento
+- `revert`: Reversión de un commit anterior
+
+
+
 #### 5.1.3. Source Code Style Guide & Conventions
 #### 5.1.4. Software Deployment Configuration
 ### 5.2. Landing Page, Services & Applications Implementation
