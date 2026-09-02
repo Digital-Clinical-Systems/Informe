@@ -358,6 +358,121 @@ Para mantener un historial claro de cambios, el equipo utiliza Conventional Comm
 
 
 #### 5.1.3. Source Code Style Guide & Conventions
+
+Con el objetivo de mantener un código legible, limpio, coherente y fácilmente mantenible, el proyecto **ClinicalSync** adopta un conjunto de guías de estilo y convenciones estándar para todos los lenguajes utilizados en la solución. 
+Estas buenas prácticas permiten asegurar consistencia entre los miembros del equipo, mejorar la calidad del código y facilitar su escalabilidad en futuras iteraciones.
+
+Como regla principal, **todas las variables, funciones, clases, componentes y archivos se nombran estrictamente en idioma inglés**, evitando el uso del "spanglish", traducciones incorrectas (como *deployar*, *aplicativo*) o nomenclatura en español en la lógica interna del software.
+
+### HTML / CSS (Landing Page y vistas estáticas)
+
+**Guía adoptada:** Google HTML/CSS Style Guide y W3C Standards
+
+### HTML
+- Se utiliza una estructura semántica clara usando etiquetas como `header`, `main`, `section`, `article` y `footer`.
+- El código HTML se escribe con indentación de 2 espacios.
+- Todas las etiquetas deben cerrarse correctamente.
+- Se utilizan comillas dobles para atributos HTML.
+- Se evita el uso de estilos inline para mantener separación entre estructura y diseño.
+
+### CSS
+- Se utiliza la metodología BEM (Block Element Modifier) para la nomenclatura de clases:
+    - Ejemplo: `btn--primary`
+- Se prioriza el uso de clases reutilizables.
+- Se evita la duplicación de estilos.
+- Se aplican variables CSS para colores, espaciados y medidas globales.
+- Se organiza el CSS de forma modular por componentes o secciones.
+
+
+### AngularJS (Frontend Web Application)
+
+**Guías adoptadas:** *Angular Coding Style Guide* y *Google TypeScript Style Guide*.
+
+### Nomenclatura
+- `camelCase` para variables, funciones, métodos y propiedades.
+- `PascalCase` para clases, interfaces, componentes y enumeraciones (`enums`).
+- `UPPER_SNAKE_CASE` para constantes globales.
+- `kebab-case` para nombres de archivos y carpetas (ej. `patient-list.component.ts`).
+- Prefijo `_` para propiedades privadas y *signals* privados.
+
+### Buenas prácticas
+- Clean Architecture junto con Domain-Driven Design (DDD): Separación lógica en capas (`application`, `domain`, `infrastructure` y `presentation`).
+- Inyección de dependencias: Uso de `@Injectable()` y la función `inject()` de Angular para la gestión ágil de dependencias.
+- Patrón Assembler/Mapper: Conversión de DTOs a entidades de dominio para no acoplar la respuesta del API directamente a la vista.
+- Manejo de estado reactivo: Uso de *Signals* nativos para el control del estado en los componentes.
+- Lógica derivada: Uso de `computed` *signals* para variables que dependen reactivamente de otros estados.
+- Seguridad en la navegación: Implementación de *Route Guards* para la protección de acceso a rutas privadas o clínicas.
+
+### Estilo de código
+- Declaración de variables: Uso estricto de `const` (por defecto) y `let` (solo si mutará). Prohibido el uso de `var`.
+- Reusabilidad: Código altamente modular, priorizando componentes "tontos" (Dumb/Presentational Components) y servicios "inteligentes" (Smart Services).
+- Manejo de errores estructurado: Uso de bloques `try/catch` o el operador `catchError` de RxJS con mensajes descriptivos y amigables para el usuario.
+- Sintaxis moderna: Uso de operadores ternarios y *optional chaining* (`?.`) para simplificar validaciones y evitar errores en consola.
+- Seguridad de tipos: Habilitación estricta de *TypeScript Strict Mode* para garantizar la máxima seguridad y detección de errores durante la compilación.
+
+
+### Java / Spring Boot (RESTful API Backend)
+
+**Guía adoptada:** *Google Java Style Guide* y convenciones de *Spring Boot Features*.
+
+### Nomenclatura
+- `camelCase` para variables, métodos, atributos y parámetros.
+- `PascalCase` para clases, interfaces, registros (*records*) y enumeraciones.
+- `UPPER_SNAKE_CASE` para constantes (`static final`).
+- `kebab-case` para las rutas (URLs) de los endpoints REST (ej. `/api/v1/vital-signs`).
+- Minúsculas (sin guiones ni mayúsculas) para la estructura de paquetes (ej. `com.carelabs.pulsereport.patient`).
+
+### Buenas prácticas
+- Domain-Driven Design (DDD): Organización del código fuente en paquetes alineados con *Bounded Contexts*.
+- Arquitectura en capas: Separación lógica estricta en `Controller` (Presentación), `Service` (Aplicación/Lógica de Negocio), `Repository` (Infraestructura) y `Domain Model`.
+- Inyección de dependencias: Uso de inyección por constructor mediante anotaciones estándar de Spring (`@RestController`, `@Service`, `@Repository`).
+- Patrón DTO y Assembler/Mapper: Conversión entre DTOs y Entidades para evitar exponer el modelo de dominio y la persistencia directamente en la API.
+- Persistencia Relacional: Uso de JPA/Hibernate para el mapeo objeto-relacional (ORM).
+- Respuestas estandarizadas: Uso consistente de `ResponseEntity` para manejar y estructurar los códigos de estado HTTP y el cuerpo de las respuestas.
+
+### Estilo de código
+- Inmutabilidad: Preferencia por variables `final` y uso de Java *Records* para la creación concisa de DTOs inmutables.
+- Código modular y aplicación de principios SOLID.
+- Manejo de errores estructurado: Excepciones centralizadas globales mediante `@ControllerAdvice` y `@ExceptionHandler` para retornar mensajes de error consistentes (400, 404, 500).
+- Seguridad contra nulos: Uso de `Optional<T>` en las consultas de base de datos y flujos lógicos para evitar `NullPointerException`.
+- Validación de datos: Implementación de *Jakarta Bean Validation* (`@Valid`, `@NotNull`, `@NotBlank`, etc.) para sanitizar el *request body* directamente en los controladores.
+
+### Convenciones generales del proyecto ClinicalSync
+
+- Todo el código está escrito en inglés.
+- Se aplica el principio SOLID.
+- Se sigue el principio DRY.
+- Se prioriza la legibilidad sobre la complejidad.
+
+### Gherkin (Especificaciones)
+
+Para la definición de criterios de aceptación en historias de usuario se utiliza Gherkin:
+
+- Given / When / Then
+- Lenguaje claro y entendible por el negocio
+
+### Ejemplos:
+
+```gherkin
+Given a patient is registered in the system
+When vital signs are recorded outside the normal range
+Then the system generates an automatic alert
+
+Given I am on the patient view
+When I record vital signs data
+Then it is saved correctly in the medical record
+
+Given I complete the SBAR form
+When I save the shift handover
+Then it is stored with the date, time, and responsible user
+
+Given a critical clinical event occurs
+When the system records it
+Then it is logged in the audit log with full details
+```
+
+
+
 #### 5.1.4. Software Deployment Configuration
 ### 5.2. Landing Page, Services & Applications Implementation
 #### 5.2.1. Sprint 1
