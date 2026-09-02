@@ -264,6 +264,67 @@ Los criterios de aceptación se redactan en formato Gherkin, con la estructura G
 En total se definieron 7 Epics, 32 User Stories y 9 Technical Stories. La cobertura responde a los hallazgos del capítulo anterior: EP-02 atiende el punto de mayor riesgo identificado en las entrevistas y en el Event Storming, que es la pérdida de información en el cambio de turno; EP-03 responde a la necesidad de registrar durante la atención y no al cierre del turno; EP-04 cierra el ciclo entre la indicación emitida y su ejecución confirmada; EP-05 atiende la fase más costosa del recorrido del médico especialista, que es la consolidación previa a la decisión; y EP-06 convierte la trazabilidad en una capacidad transversal y no en una característica aislada.
 
 ### 3.2. Impact Mapping
+
+El Impact Mapping conecta los objetivos de negocio de ClinicalSync con los actores capaces de contribuir a ellos, los cambios de comportamiento que se espera provocar, los entregables digitales que los harían posibles y las User Stories que los materializan. Su utilidad está en verificar que cada historia del backlog persigue un objetivo declarado: si una historia no puede rastrearse hasta un Business Goal, es candidata a salir del alcance.
+
+El artefacto responde a cuatro preguntas encadenadas:
+
+| Elemento | Pregunta que responde |
+|---|---|
+| **Business Goal** | ¿Qué objetivo de negocio se busca alcanzar? |
+| **Actor** | ¿Quién puede contribuir a alcanzarlo? |
+| **Impact** | ¿Qué debería hacer ese actor, de forma distinta a hoy, para contribuir? |
+| **Deliverable** | ¿Qué se puede construir para provocar ese cambio de comportamiento? |
+
+#### Business Goals SMART
+
+Los objetivos se formulan bajo criterios SMART, es decir, específicos, medibles, alcanzables, relevantes y acotados en el tiempo. Los plazos se definen respecto de la publicación de la solución.
+
+| ID | Business Goal |
+|---|---|
+| **BG-01** | Conseguir que al menos **50 visitantes** soliciten información o una demostración a través de la landing page durante los primeros **4 meses** posteriores a su publicación. |
+| **BG-02** | Lograr que al menos **3 áreas clínicas cardiovasculares** validen el flujo de traspaso SBAR digital en sesiones de prueba durante los primeros **6 meses** del proyecto. |
+| **BG-03** | Reducir en **30%** el tiempo que un profesional emplea en reunir la información necesaria para evaluar a un paciente, medido en escenarios simulados, en un plazo de **6 meses**. |
+| **BG-04** | Conseguir que al menos el **80%** del personal participante en las pruebas piloto registre signos vitales, eventos y traspasos en la plataforma sin recurrir a anotaciones en papel, durante un periodo de **3 meses**. |
+| **BG-05** | Alcanzar un **95%** de acciones clínicas registradas con responsable, fecha, hora y tipo de acción completos durante las pruebas piloto, en un plazo de **6 meses**. |
+
+#### Actores considerados
+
+| Actor | Rol respecto de los objetivos |
+|---|---|
+| **Daniela Ríos** — personal de enfermería cardiovascular | Produce la información clínica del turno. Su adopción determina si el sistema contiene datos y si el traspaso deja de depender de la memoria. |
+| **Dr. Alejandro Torres** — médico especialista cardiovascular | Consume y valida la información. Su adopción determina si la información registrada se traduce en decisiones más rápidas y mejor sustentadas. |
+| **Coordinador o jefe de servicio** | Decide la incorporación de la herramienta en la unidad y responde por la trazabilidad del proceso. |
+| **Visitante de la landing page** | Representa al decisor institucional que evalúa la solución antes de solicitar una demostración. |
+
+#### Mapa de impacto
+
+| Business Goal | Actor | Impact (cambio de comportamiento esperado) | Deliverable | User Stories |
+|---|---|---|---|---|
+| **BG-01** | Visitante de la landing page | Comprende la propuesta de valor sin explicación previa y solicita una demostración. | Landing page con problema, funcionamiento, características, beneficios, planes y formulario de contacto. | US-01, US-02, US-03, US-04, US-05, US-06, US-07 |
+| **BG-01** | Visitante de la landing page | Resuelve sus dudas iniciales y confía en el equipo antes de contactar. | Sección de preguntas frecuentes, presentación del equipo y formulario de solicitud. | US-08, US-09, US-10 |
+| **BG-01** | Visitante de la landing page | Accede a la información desde cualquier dispositivo y en su idioma. | Sitio adaptable e internacionalizado. | US-11, US-12 |
+| **BG-02** | Personal de enfermería | Realiza el relevo sobre un formato estructurado en lugar de transmitirlo verbalmente. | Módulo de traspaso SBAR con secciones obligatorias. | US-13, US-16 |
+| **BG-02** | Personal de enfermería | Consulta y confirma explícitamente el traspaso recibido al iniciar su turno. | Consulta de traspasos y confirmación de recepción. | US-14, US-15 |
+| **BG-02** | Coordinador de servicio | Verifica que los traspasos se realizan y quedan documentados. | Bitácora de traspasos con estado y responsable. | US-30, US-31 |
+| **BG-03** | Médico especialista | Evalúa al paciente desde una vista consolidada en lugar de reunir datos de varias fuentes. | Resumen clínico del paciente y vista de evolución reciente. | US-26, US-27 |
+| **BG-03** | Médico especialista | Detecta antes los cambios críticos y prioriza a quién atender primero. | Alertas sobre umbrales y ordenamiento por riesgo. | US-28, US-29 |
+| **BG-03** | Médico especialista | Confirma el cumplimiento de sus indicaciones sin consultar verbalmente al personal. | Ciclo de indicación, ejecución y confirmación. | US-22, US-23, US-24, US-25 |
+| **BG-04** | Personal de enfermería | Registra durante la atención en lugar de anotar en papel y transcribir al cierre. | Registro rápido de signos vitales, medicación y eventos desde dispositivo portátil. | US-18, US-19, US-20 |
+| **BG-04** | Personal de enfermería | Organiza su turno desde la plataforma y cierra la guardia sin documentación pendiente. | Vista de pacientes asignados y resumen de pendientes del turno. | US-17, US-21 |
+| **BG-05** | Todo el equipo clínico | Deja constancia verificable de cada acción sin esfuerzo adicional de su parte. | Registro automático de responsable y marca temporal en cada operación. | US-31, US-32, TS-06 |
+| **BG-05** | Coordinador de servicio | Audita la atención brindada a partir del historial del sistema y no de registros físicos. | Bitácora consultable y filtrable por paciente, tipo de acción y periodo. | US-30, US-32 |
+
+<p align="center">
+  <img src="assets/chapter-3/impact-mapping.png" alt="Impact Mapping de ClinicalSync" width="95%">
+</p>
+
+#### Conclusión del Impact Mapping
+
+El mapa evidencia que los objetivos de ClinicalSync dependen de dos cambios de comportamiento distintos y secuenciales. El primero corresponde al personal de enfermería, que debe pasar del registro en papel al registro en la plataforma durante la atención; sin ese cambio, el sistema no contiene información y ningún otro objetivo es alcanzable. El segundo corresponde al médico especialista, que debe pasar de reconstruir el estado del paciente a consultarlo consolidado.
+
+Esta dependencia tiene una consecuencia directa sobre la priorización: los entregables dirigidos a Daniela Ríos deben construirse antes que los dirigidos al Dr. Alejandro Torres, porque los segundos carecen de valor sin los datos que producen los primeros. El Product Backlog de la sección siguiente refleja ese orden.
+
 ### 3.3. Product Backlog
 
 ---
