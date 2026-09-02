@@ -405,8 +405,8 @@ Las entrevistas fueron grabadas en video previo consentimiento de los participan
       <b>Tipo de establecimiento:</b> Clínica privada de alta complejidad<br>
       <b>Modalidad de turno:</b> Guardias rotativas de 12 horas (07:00–19:00 / 19:00–07:00)<br>
       <b>Nivel tecnológico:</b> Intermedio<br>
-      <b>Timing:</b> [hh:mm:ss - hh:mm:ss]<br>
-      <b>Duración:</b> [mm:ss]<br>
+      <b>Timing:</b> 00:02 - 11:53<br>
+      <b>Duración:</b> 11:51<br>
       <b>Entrevistador:</b> Oskar Rodrigo Sosa Soto
     </td>
     <td align="center">
