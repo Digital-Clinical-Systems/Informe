@@ -434,14 +434,14 @@ Las entrevistas fueron grabadas en video previo consentimiento de los participan
 <table border="1">
   <tr>
     <td width="40%">
-      <b>Nombres y apellidos:</b> [Nombres y apellidos]<br>
-      <b>Edad:</b> [Edad] años<br>
-      <b>Distrito:</b> [Distrito]<br>
-      <b>Ocupación:</b> [Rol y especialidad]<br>
-      <b>Área de trabajo:</b> [Área]<br>
-      <b>Timing:</b> [hh:mm:ss - hh:mm:ss]<br>
-      <b>Duración:</b> [mm:ss]<br>
-      <b>Entrevistador:</b> [Integrante del equipo]
+      <b>Nombres y apellidos:</b> Bruno Elescano<br>
+      <b>Edad:</b> 25 años<br>
+      <b>Distrito:</b> Comas<br>
+      <b>Ocupación:</b> Enfermero <br>
+      <b>Área de trabajo:</b> UCI Cardiovascular<br>
+      <b>Timing:</b> 00:00 - 06:36<br>
+      <b>Duración:</b> 6:36<br>
+      <b>Entrevistador:</b> Mathias Acuache
     </td>
     <td align="center">
       <img src="assets/chapter-2/entrevista-enfermeria-2.png" alt="Entrevista 2 - Enfermería cardiovascular" width="85%">
@@ -449,13 +449,13 @@ Las entrevistas fueron grabadas en video previo consentimiento de los participan
   </tr>
   <tr>
     <td colspan="2">
-      <b>Enlace:</b> <a href="[URL del video en Microsoft Stream]">[URL del video en Microsoft Stream]</a>
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202314898_upc_edu_pe/IQB1lYPPM22mTJ94R6JmnyPkAXLcARq12Viyy43AoueqhiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7jOopw">[URL del video en Microsoft Stream]</a>
       <br><br>
-      <b>Resumen:</b> [Descripción de cómo el entrevistado realiza hoy el registro clínico durante el turno, qué herramientas utiliza y qué dificultades encuentra.]
+      <b>Resumen:</b> Durante el turno, el personal de enfermería cardiovascular realiza la documencación clínica de manera fraccionada, concentrando el grueso del balance hídrico y las notas extensas en el tramo final de la jornada. Institucionalmente, se utiliza la historia clínica electrónica a través de computadoras fijas en la estación de enfermería. Si bien esto centraliza los datos y evita problemas de legibilidad, el sistema presenta importantes barreras operativas en los cuales se evidencia interfaces poco intuitivas, lentitud y bloqueos frencuentes.
       <br><br>
-      [Descripción de la mecánica del cambio de turno en su servicio, situaciones de pérdida u omisión de información y motivos por los que recurre a registros complementarios.]
+      El cambio de turno se ejecuta mediante una modalidad mixta que combiana una reunión informativa general en la estación y una pasada de visita física cama por cama para poder revisar los diversos aparatos como monitores, infusiones y drenajes. En este espacio se transmite el estado hemodinámico, modificaciones de fármacos vasoactivos, laboratorios, eventos críticos y pendientes. No obstante, se han registrado incidentes donde la información crítica se omite debido a pases de guardia atropelladas por urgencias y acuerdos puramente verbales que no se han podido plasmar.
       <br><br>
-      [Condiciones bajo las que adoptaría una herramienta digital y funcionalidades que considera indispensables.]
+      Para lograr que una solución tecnológica sea utilizada de forma continua durante el turno, el personal de enfermería establece tres requerimientos estructurales indispensables. Integración interoperable, portabilidad y movilidad y agilidad operativa, de acorde a esto se puede mejorar de cierta forma todo el avance que se hace en dicho sector.
     </td>
   </tr>
 </table>
