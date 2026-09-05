@@ -202,8 +202,8 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 #### 1.1.2. Perfiles de integrantes del equipo
 <table>
   <tr>
-    <td rowspan="4" align="center">
-      <img src="assets/chapter-1/FotoEstudiante/oskar.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
+    <td rowspan="4" align="center" width="200">
+      <img src="assets/chapter-1/FotoEstudiante/oskar.png" alt="Foto de Oskar Sosa" width="180"/>
     </td>
     <td><b>Nombre:</b> Oskar Rodrigo Sosa Soto</td>
   </tr>
@@ -220,8 +220,8 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 
 <table>
   <tr>
-    <td rowspan="4" align="center">
-      <img src="assets/chapter-1/FotoEstudiante/angel.png" alt="Foto Estudiante" width="240" style="height:300px;object-fit:contain;"/>
+    <td rowspan="4" align="center" width="200">
+      <img src="assets/chapter-1/FotoEstudiante/angel.png" alt="Foto de Angel Valdez" width="180"/>
     </td>
     <td><b>Nombre:</b> Angel Andres Valdez Melo</td>
   </tr>
@@ -238,8 +238,8 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 
 <table>
   <tr>
-    <td rowspan="4" align="center">
-      <img src="" alt="Foto Estudiante" width="550"/>
+    <td rowspan="4" align="center" width="200">
+      <!-- Pendiente: subir la foto como assets/chapter-1/FotoEstudiante/johnny.png y reemplazar este comentario por: <img src="assets/chapter-1/FotoEstudiante/johnny.png" alt="Foto de Johnny Ojanama" width="180"/> -->
     </td>
     <td><b>Nombre:</b> Johnny Alexander Ojanama Abanto </td>
   </tr>
@@ -256,8 +256,8 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 
 <table>
   <tr>
-    <td rowspan="4" align="center">
-      <img src="assets/chapter-1/FotoEstudiante/mathias.png" alt="Foto de Mathias Acuache" width="240" style="height:300px;object-fit:contain;"/>
+    <td rowspan="4" align="center" width="200">
+      <img src="assets/chapter-1/FotoEstudiante/mathias.png" alt="Foto de Mathias Acuache" width="180"/>
     </td>
     <td><b>Nombre:</b> Mathias Joaquin Acuache Lucas</td>
   </tr>
@@ -274,8 +274,8 @@ Visión: Consolidarnos como una plataforma de referencia en el ámbito de la sal
 
 <table>
   <tr>
-    <td rowspan="4" align="center">
-      <img src="" alt="Foto Estudiante" width="650"/>
+    <td rowspan="4" align="center" width="200">
+      <!-- Pendiente: subir la foto del quinto integrante en assets/chapter-1/FotoEstudiante/ y reemplazar este comentario por su etiqueta img con width="180" -->
     </td>
     <td><b>Nombre:</b> Nombre Estudiante</td>
   </tr>
