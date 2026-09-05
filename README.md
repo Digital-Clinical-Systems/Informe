@@ -21,7 +21,8 @@
     <li>U202417448 - Johan Giovani Huamán Cuba</li>
     <li>u202212214 - Oskar Rodrigo Sosa Soto</li>
     <li>u202314898 - Mathias Joaquin Acuache Lucas</li>
-    <li>[Código 4] - [Nombres 4]</li>
+    <li>u20261D993 - Angel Andres Valdez Melo</li>
+    <li>[Código 5] - [Nombres 5]</li>
   </ul>
   <br>
   <h4>Setiembre, 2026</h4>
